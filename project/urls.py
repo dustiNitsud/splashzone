@@ -6,9 +6,9 @@ from django.contrib import admin
 from django.urls import include, path
 
 from lib.sitestuff import current_site
-from news import views as news_views
-from wavepool import views as wavepool_views
-from api import views as api_views
+from apps.news import views as news_views
+from apps.wavepool import views as wavepool_views
+from apps.api import views as api_views
 
 
 admin.site.site_header = "{} Admin".format(current_site().name)
